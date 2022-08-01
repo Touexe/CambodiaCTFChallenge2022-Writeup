@@ -1,10 +1,10 @@
-# C for CAT
+# vhost
 ## Overview 
-Points: 50
+Points: 15
 
-Category: Steganography
+Category: Web
 ## Description
-This cat so heavy...!
+Could you find my default virtual host?
 ## Approach
     
 ## Flag

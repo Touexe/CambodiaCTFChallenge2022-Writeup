@@ -1,10 +1,10 @@
-# C for CAT
+# Bots
 ## Overview 
-Points: 50
+Points: 10
 
-Category: Steganography
+Category: Web
 ## Description
-This cat so heavy...!
+Are you a bot?
 ## Approach
     
 ## Flag

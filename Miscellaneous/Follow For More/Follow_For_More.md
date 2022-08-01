@@ -1,10 +1,10 @@
-# Map
+# Follow For More
 ## Overview 
 Points: 20
 
-Category: Steganography
+Category: Miscellaneous
 ## Description
-we lost the map
+Technovage and Salacyber are the key. :)
 ## Approach
     
 ## Flag

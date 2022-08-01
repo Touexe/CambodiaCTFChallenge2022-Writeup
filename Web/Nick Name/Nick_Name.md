@@ -1,10 +1,10 @@
-# C for CAT
+# Nick Name
 ## Overview 
-Points: 50
+Points: 15
 
-Category: Steganography
+Category: Web
 ## Description
-This cat so heavy...!
+Can you find nickname of my website?
 ## Approach
     
 ## Flag

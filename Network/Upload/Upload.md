@@ -1,10 +1,10 @@
-# C for CAT
+# Upload
 ## Overview 
-Points: 50
+Points: 10
 
-Category: Steganography
+Category: Network
 ## Description
-This cat so heavy...!
+It easy when you know it 
 ## Approach
     
 ## Flag

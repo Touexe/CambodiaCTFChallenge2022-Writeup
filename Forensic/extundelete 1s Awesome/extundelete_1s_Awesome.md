@@ -1,10 +1,10 @@
-# C for CAT
+# extundelete 1s Awesome
 ## Overview 
 Points: 50
 
-Category: Steganography
+Category: Forensic
 ## Description
-This cat so heavy...!
+CATCH ME IF YOU CAN BABY :D
 ## Approach
     
 ## Flag
