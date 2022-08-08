@@ -47,24 +47,21 @@ Megapixels                      : 4.2
 ```
 Nothing to be found important here except the artist tag value `s@lacyb3r` which seems to be a hint or a password or the flag itself? No, We got no luck with that `s@lacyb3r` as the flag, yet to be either a hint or a password. 
 
-I came across [`steghide`](http://steghide.sourceforge.net/) which is is a steganography tool that uses a passcode to hide private files within the image or audio file. BMP and JPEG picture types are supported, as well as AU and WAV audio formats. The file is encrypted by default using the Rijndael algorithm, with a key size of 128 bits. 
+I came across [`steghide`](http://steghide.sourceforge.net/) which is is a steganography tool that uses a passcode to hide private files within the image or audio file. BMP and JPEG picture types are supported, as well as AU and WAV audio formats. The file is encrypted by default using the Rijndael algorithm, with a key size of 128 bits. However, There's a tool to counter `steghide` itself. [`stegseek`](https://github.com/RickdeJager/stegseek) is a `steghide` cracker that can be used to extract hidden data from files.
 
-From software instruction we got this command to decrypt and extract hidden data inside the image.
-
-`steghide extract -sf salacyber_f08e6d459baa29f3b98c49.jpeg`
-
-we leave it blank in case if there's no password needed. 
+From software instruction we got this command to find hidden data inside the image.
 
 ```
-touexe@kali:~$ steghide extract -sf salacyber_f08e6d459baa29f3b98c49.jpeg
-Enter passphrase:
+touexe@kali:~$ stegseek --seed salacyber_f08e6d459baa29f3b98c49.jpeg 
+StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
+
+[i] Found (possible) seed: "5db71817"             
+	Plain size: 76.0 Byte(s) (compressed)
+	Encryption Algorithm: rijndael-128
+	Encryption Mode:      cbc
 ```
-OOPs! That's a no. Definitely a password needed.
-```
-touexe@kali:~$ steghide extract -sf salacyber_f08e6d459baa29f3b98c49.jpeg
-Enter passphrase: 
-steghide: could not extract any data with that passphrase!
-```
+Yup! definietely a hidden file inside the image using steghide with passphrase.
+
 Where's the passphrase tho? From our previous discovery. `s@lacyb3r` seems to be there for a reason as either a hint or a password to somewhere. Let's try it out. 
 
 ```
